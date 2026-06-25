@@ -1,0 +1,24 @@
+{
+  "name": "ritual-privacy-bounty-judge",
+  "version": "1.0.0",
+  "description": "Privacy-preserving AI Bounty Judge with commit-reveal scheme and Ritual AI integration",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "test:solidity": "npx hardhat test solidity",
+    "test:nodejs": "npx hardhat test nodejs",
+    "deploy:local": "npx hardhat ignition deploy ignition/modules/PrivacyBountyJudge.ts",
+    "deploy:sepolia": "npx hardhat ignition deploy ignition/modules/PrivacyBountyJudge.ts --network sepolia",
+    "deploy:ritual": "npx hardhat ignition deploy ignition/modules/PrivacyBountyJudge.ts --network ritual",
+    "run:helpers": "npx hardhat run scripts/helpers.ts --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
+    "@nomicfoundation/hardhat-viem": "^2.0.0",
+    "dotenv": "^16.4.0",
+    "hardhat": "^2.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0",
+    "viem": "^2.0.0"
+  }
+}
